@@ -10,12 +10,10 @@ get '/about' do
 end
 
 post '/getfile' do
-#	File.open('public/file.txt', 'w') do |f|
-#    f.write params[:xmlresults]
-#    redirect to '/file.txt'
-#  end
-  content_type 'application/octet-stream'
+  content_type 'application/xml'
   text = params[:xmlresults]
+end
 
-
+post '/getdc' do
+  "Submit DC to Database."
 end
